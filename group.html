@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Circle - AuraAlly</title>
+    <link rel="stylesheet" href="css/groups.css">
+</head>
+<body class="chat-page-body">
+    <header class="side-header">
+        </header>
+
+    <main class="chat-wrapper-container">
+        <div class="chat-wrapper">
+            <header class="chat-header">
+                <button onclick="window.history.back()" class="back-circle">⬅</button>
+                <div class="chat-info">
+                    <h2 id="topicName">Loading Circle...</h2>
+                    <span class="status-online">● Online Community</span>
+                </div>
+            </header>
+
+            <div id="messages" class="message-container">
+                </div>
+
+            <div class="chat-input-area">
+                <input type="text" id="messageInput" placeholder="Type a message safely...">
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="js/group.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Groups - AuraAlly</title>
+    <link rel="stylesheet" href="css/groups.css">
+</head>
+<body>
+    <header class="side-header">
+        <nav class="side-nav">
+            <a href="home.html" class="nav-icon"><img src="https://img.icons8.com/ios/50/home--v1.png"></a>
+            <a href="chat.html" class="nav-icon"><img src="https://img.icons8.com/ios/50/speech-bubble--v1.png"></a>
+            <a href="groups.html" class="nav-icon active"><img src="https://img.icons8.com/ios/50/conference-call.png"></a>
+            <a href="forum.html" class="nav-icon"><img src="https://img.icons8.com/ios/50/megaphone.png"></a>
+            <a href="resources.html" class="nav-icon"><img src="https://img.icons8.com/ios/50/book-browser.png"></a>
+        </nav>
+        <div class="side-footer-icons">
+            <button id="logoutBtn" class="nav-icon"><img src="https://img.icons8.com/ios/50/exit.png"></button>
+        </div>
+    </header>
+
+   <main class="groups-page-wrapper">
+    <header class="groups-header">
+        <h1>Join a Support Circle</h1>
+        <p class="slogan">"Find your tribe. Share, listen, and grow together in safe spaces."</p>
+        
+        <div class="create-action-area">
+            <button class="create-group-trigger" onclick="toggleCreateModal()">+ Start a New Circle</button>
+        </div>
+    </header>
+
+    <div class="groups-grid">
+        <div class="group-card">
+            <div class="group-icon-circle menstruation-bg"><img src="https://img.icons8.com/ios/50/hearts--v1.png"></div>
+            <h3>Periods & Puberty</h3>
+            <p>A safe space for health and hygiene discussions.</p>
+            <button onclick="joinGroup('periods')" class="join-btn">Join Circle</button>
+        </div>
+
+        <div class="group-card">
+            <div class="group-icon-circle mental-bg"><img src="https://img.icons8.com/ios/50/info--v1.png"></div>
+            <h3>Mental Well-being</h3>
+            <p>Discuss anxiety, stress, and emotional health.</p>
+            <button onclick="joinGroup('mental')" class="join-btn">Join Circle</button>
+        </div>
+
+        <div class="group-card">
+            <div class="group-icon-circle confidence-bg" style="background: #fff9db;"><img src="https://img.icons8.com/ios/50/star--v1.png"></div>
+            <h3>Self Confidence</h3>
+            <p>Build your self-esteem and share your wins.</p>
+            <button onclick="joinGroup('confidence')" class="join-btn">Join Circle</button>
+        </div>
+
+        <div class="group-card">
+            <div class="group-icon-circle career-bg" style="background: #fff4e6;"><img src="https://img.icons8.com/ios/50/briefcase.png"></div>
+            <h3>Career & Goals</h3>
+            <p>Planning your future? Let's discuss skills and paths.</p>
+            <button onclick="joinGroup('career')" class="join-btn">Join Circle</button>
+        </div>
+    </div>
+
+    <div id="createGroupModal" class="modal">
+        <div class="modal-content">
+            <h3>Start a New Circle</h3>
+            <input type="text" id="newGroupName" placeholder="Circle Name (e.g. Study Buddies)">
+            <textarea id="newGroupDesc" placeholder="What is this circle about?"></textarea>
+            <div class="modal-btns">
+                <button onclick="createNewGroup()" class="join-btn">Create</button>
+                <button onclick="toggleCreateModal()" class="back-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <script>
+       
+        function joinGroup(topic) { 
+            window.location.href = `group.html?topic=${topic}`; 
+        }
+
+        
+        document.getElementById('logoutBtn').addEventListener('click', () => { 
+            window.location.href = "index.html"; 
+        });
+    </script>
+
+    <script type="module" src="js/group.js"></script>
+</body>
+</html>

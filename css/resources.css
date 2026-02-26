@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    background-color: #fcfaf7;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.side-header {
+    width: 85px;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-right: 1px solid #f0ede4;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+.nav-icon img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%);
+    opacity: 0.4;
+}
+
+.nav-icon.active img, .nav-icon:hover img {
+    filter: none;
+    opacity: 1;
+}
+
+.resource-page-wrapper {
+    margin-left: 85px;
+    padding: 60px 8%;
+    flex: 1;
+}
+
+.resource-header h1 { 
+    font-family: 'Playfair Display'; 
+    font-size: 3.5rem; 
+    margin-bottom: 10px; 
+}
+
+.slogan { 
+    font-family: 'Playfair Display'; 
+    font-style: italic; 
+    color: #8a380c; 
+    margin-bottom: 40px; 
+}
+
+.search-container {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+    margin-bottom: 60px;
+}
+
+.search-icon { width: 20px; opacity: 0.3; margin-right: 15px; }
+
+.search-container input {
+    border: none; 
+    outline: none; 
+    width: 100%; 
+    font-size: 1rem; 
+    background: transparent;
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.resource-card {
+    background: white;
+    padding: 40px;
+    border-radius: 35px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.02);
+    transition: 0.3s;
+}
+
+.resource-card:hover { transform: translateY(-10px); }
+
+.icon-circle {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icon-circle img { width: 25px; }
+
+.category-tag { font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; }
+
+.menstruation-bg { background: #fff0f3; } .menstruation-text { color: #d63384; }
+.mental-bg { background: #f0f3ff; } .mental-text { color: #4458dc; }
+.safety-bg { background: #fff5f5; } .safety-text { color: #e03131; }
+.rights-bg { background: #f0fff4; } .rights-text { color: #2f9e44; }
+
+.read-more { display: block; margin-top: 20px; color: #33312e; font-weight: 600; text-decoration: none; }
+
+.helpline-pill {
+    display: inline-block; 
+    margin-top: 15px; 
+    background: #fcfaf7;
+    padding: 8px 15px; 
+    border-radius: 12px; 
+    font-size: 0.85rem; 
+    font-weight: 600;
+}
+
+.site-footer {
+    background: #2d3436;
+    color: #fdf2e9;
+    padding: 35px 0;
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-inner p {
+    font-size: 1.2rem;
+    margin: 0;
+    opacity: 0.7;
+}
+
+.footer-inner a {
+    color: #ffb07c;
+    text-decoration: none;
+    margin: 0 10px;
+}

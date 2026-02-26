@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Library - AuraAlly</title>
+    <link rel="stylesheet" href="css/resources.css">
+</head>
+<body>
+    <header class="side-header">
+        <nav class="side-nav">
+            <a href="home.html" class="nav-icon" title="Home"><img src="https://img.icons8.com/ios/50/home--v1.png"></a>
+            <a href="chat.html" class="nav-icon" title="Chat"><img src="https://img.icons8.com/ios/50/speech-bubble--v1.png"></a>
+            <a href="groups.html" class="nav-icon" title="Groups"><img src="https://img.icons8.com/ios/50/conference-call.png"></a>
+            <a href="forum.html" class="nav-icon" title="Forum"><img src="https://img.icons8.com/ios/50/megaphone.png"></a>
+            <a href="resources.html" class="nav-icon active" title="Resources"><img src="https://img.icons8.com/ios/50/book-browser.png"></a>
+        </nav>
+        <div class="side-footer-icons">
+            <button id="logoutBtn" class="nav-icon" title="Logout"><img src="https://img.icons8.com/ios/50/exit.png"></button>
+        </div>
+    </header>
+
+    <main class="resource-page-wrapper">
+        <header class="resource-header">
+            <h1>Knowledge Library</h1>
+            <p class="slogan">"Empowering you with the information you need to navigate life with confidence."</p>
+            
+            <div class="search-container">
+                <img src="https://img.icons8.com/ios/50/search--v1.png" class="search-icon">
+                <input type="text" id="searchInput" onkeyup="filterResources()" placeholder="Search (e.g. Periods, Anxiety, Safety)...">
+            </div>
+        </header>
+
+        <div class="resource-grid" id="resourceGrid">
+            <section class="resource-card">
+                <div class="icon-circle menstruation-bg"><img src="https://img.icons8.com/ios/50/hearts--v1.png"></div>
+                <span class="category-tag menstruation-text">MENSTRUATION</span>
+                <h3>Understanding Your Cycle</h3>
+                <p>Hygiene and health tips for your cycle. Watch this expert guide.</p>
+                <a href="https://www.youtube.com/watch?v=wuMoBlCj5MM" target="_blank" class="read-more">Watch Video →</a>
+            </section>
+
+            <section class="resource-card">
+                <div class="icon-circle mental-bg"><img src="https://img.icons8.com/ios/50/info--v1.png"></div>
+                <span class="category-tag mental-text">MENTAL HEALTH</span>
+                <h3>Dealing with Anxiety</h3>
+                <p>Support via KIRAN 24/7 Mental Health Helpline.</p>
+                <div class="helpline-pill">Call: 1800-599-0019</div>
+                <a href="https://pib.gov.in/PressReleaseIframePage.aspx?PRID=1652063" target="_blank" class="read-more">Official Info →</a>
+            </section>
+
+            <section class="resource-card">
+                <div class="icon-circle confidence-bg" style="background: #fff9db;"><img src="https://img.icons8.com/ios/50/star--v1.png"></div>
+                <span class="category-tag confidence-text" style="color: #f59f00;">SELF GROWTH</span>
+                <h3>Build Confidence</h3>
+                <p>Practical steps to boost your self-esteem and believe in yourself.</p>
+                <a href="https://www.verywellmind.com/how-to-boost-your-self-confidence-4163098" target="_blank" class="read-more">Read Tips →</a>
+            </section>
+
+            <section class="resource-card">
+                <div class="icon-circle harassment-bg" style="background: #f3f0ff;"><img src="https://img.icons8.com/ios/50/megaphone.png"></div>
+                <span class="category-tag harassment-text" style="color: #7048e8;">AWARENESS</span>
+                <h3>Stop Harassment</h3>
+                <p>Learn how to recognize harassment and report it safely.</p>
+                <div class="helpline-pill">NCW: 7827170170</div>
+                <a href="http://www.ncw.nic.in/helplines" target="_blank" class="read-more">Get Help →</a>
+            </section>
+
+            <section class="resource-card">
+                <div class="icon-circle rights-bg"><img src="https://img.icons8.com/ios/50/scales.png"></div>
+                <span class="category-tag rights-text">LEGAL RIGHTS</span>
+                <h3>Your Legal Rights</h3>
+                <p>Official legal awareness programmes and laws for women by NCW.</p>
+                <a href="https://plato.stanford.edu/entries/legal-rights/" target="_blank" class="read-more">Read Portal →</a>
+            </section>
+
+
+            <section class="resource-card">
+                 <div class="icon-circle tech-bg" style="background: #e7f5ff;"><img src="https://img.icons8.com/ios/50/laptop.png"></div>
+    <span class="category-tag tech-text" style="color: #228be6;">DIGITAL SKILLS</span>
+    <h3>Digital Literacy</h3>
+    <p>Learn how to use the internet safely and build skills for the future.</p>
+    <a href="https://www.digitalliteracy.gov.in/" target="_blank" class="read-more">Start Learning →</a>
+</section>
+
+<section class="resource-card">
+    <div class="icon-circle career-bg" style="background: #fff4e6;"><img src="https://img.icons8.com/ios/50/briefcase.png"></div>
+    <span class="category-tag career-text" style="color: #fd7e14;">CAREER</span>
+    <h3>Career Pathways</h3>
+    <p>Explore different career options and find out how to reach your goals.</p>
+    <a href="https://www.ncs.gov.in/" target="_blank" class="read-more">Explore Careers →</a>
+</section>
+
+<section class="resource-card">
+    <div class="icon-circle money-bg" style="background: #ebfbee;"><img src="https://img.icons8.com/ios/50/money-bag.png"></div>
+    <span class="category-tag money-text" style="color: #40c057;">FINANCE</span>
+    <h3>Financial Freedom</h3>
+    <p>Understand the basics of savings, budgeting, and managing your own money.</p>
+    <a href="https://www.rbi.org.in/commonman/English/Scripts/FinancialEducation.aspx" target="_blank" class="read-more">Money Basics →</a>
+</section>
+
+<section class="resource-card">
+    <div class="icon-circle emotional-bg" style="background: #fff0f6;"><img src="https://img.icons8.com/ios/50/brain-pill.png"></div>
+    <span class="category-tag emotional-text" style="color: #e64980;">EMOTIONAL STRENGTH</span>
+    <h3>Emotional Well-being</h3>
+    <p>Learn to manage your emotions and build stronger, healthier relationships.</p>
+    <a href="https://www.helpguide.org/articles/mental-health/emotional-intelligence-toolkit.htm" target="_blank" class="read-more">Build Strength →</a>
+</section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>© 2026 AuraAlly | <a href="#">Privacy</a> | <a href="#">Helpline: 181</a></p>
+        </div>
+    </footer>
+
+    <script>
+       
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            if(confirm("Are you sure you want to logout?")) {
+                window.location.href = "login.html"; 
+            }
+        });
+
+        
+        function filterResources() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let cards = document.getElementsByClassName('resource-card');
+
+            for (let i = 0; i < cards.length; i++) {
+                let title = cards[i].querySelector('h3').innerText.toLowerCase();
+                let category = cards[i].querySelector('.category-tag').innerText.toLowerCase();
+                let text = cards[i].querySelector('p').innerText.toLowerCase();
+                
+                if (title.includes(input) || category.includes(input) || text.includes(input)) {
+                    cards[i].style.display = "block";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

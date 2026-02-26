@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #fcfaf7;
+    font-family: 'Poppins', sans-serif;
+    color: #33312e;
+}
+
+
+.side-header {
+    width: 85px;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-right: 1px solid #f0ede4;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav-icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-icon img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%);
+    opacity: 0.4;
+    transition: 0.4s ease;
+}
+
+.nav-icon.active img, .nav-icon:hover img {
+    filter: none;
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.main-content {
+    margin-left: 85px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-push {
+    flex: 1;
+    padding: 40px 10%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    line-height: 1.1;
+    margin: 0 0 15px 0;
+}
+
+.tagline {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #5a5754;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+
+.aesthetic-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    align-items: start;
+}
+
+.grid-box {
+    background: #ffffff;
+    border-radius: 35px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    height: fit-content;
+}
+
+.grid-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.box-icon {
+    width: 45px;
+    height: 45px;
+    background: #fdf2e9;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-box h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.grid-box p {
+    color: #8a817c;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* --- Trending Topics --- */
+.trending-topics-section {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    padding: 0 40px;
+    max-width: 1100px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.trending-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #33312e;
+    margin: 0;
+}
+
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 25px;
+    width: 100%;
+}
+
+.topic-pill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 20px;
+    border-radius: 28px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+.topic-pill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+}
+
+.topic-pill img {
+    width: 32px;
+    margin-bottom: 15px;
+}
+
+.topic-pill span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+
+.menstruation { background-color: #fff0f3; color: #d63384; }
+.mental-health { background-color: #f0f3ff; color: #4458dc; }
+.rights { background-color: #f0fff4; color: #28a745; }
+.confidence { background-color: #fff9f0; color: #fd7e14; }
+
+
+.site-footer {
+    background: #2d3436;
+    color: #fdf2e9;
+    padding: 35px 0;
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-inner p {
+    font-size: 1.2rem;
+    margin: 0;
+    opacity: 0.7;
+}
+
+.footer-inner a {
+    color: #ffb07c;
+    text-decoration: none;
+    margin: 0 10px;
+}

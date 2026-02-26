@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Chat - AuraAlly</title>
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+    <header class="side-header">
+        <nav class="side-nav">
+            <a href="home.html" class="nav-icon"><img src="https://img.icons8.com/ios/50/home--v1.png"></a>
+            
+            <a href="chat.html" class="nav-icon active">
+                <img src="https://img.icons8.com/ios/50/speech-bubble--v1.png">
+                <div class="notification-dot"></div>
+            </a>
+            
+            <a href="groups.html" class="nav-icon"><img src="https://img.icons8.com/ios/50/conference-call.png"></a>
+            <a href="forum.html" class="nav-icon"><img src="https://img.icons8.com/ios/50/megaphone.png"></a>
+            <a href="resources.html" class="nav-icon"><img src="https://img.icons8.com/ios/50/book-browser.png"></a>
+        </nav>
+    </header>
+
+    <main class="simple-chat-container">
+        <div class="chat-user-header">
+            <h3>Direct Messages:</h3>
+            <div id="usersList" class="horizontal-users">
+                </div>
+        </div>
+
+        <div class="simple-chat-window">
+            <div id="chatBox" class="message-container">
+                <p class="start-msg">Select a peer to start chatting safely.</p>
+            </div>
+
+            <div class="simple-input-area">
+                <input type="text" id="messageInput" placeholder="Write a message...">
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>© 2026 AuraAlly | <a href="#">Privacy</a> | <a href="#">Helpline: 181</a></p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - AuraAlly</title>
+    <link rel="stylesheet" href="css/forum.css">
+</head>
+<body>
+    <header class="side-header">
+        <nav class="side-nav">
+            <a href="home.html" class="nav-icon" title="Home">
+                <img src="https://img.icons8.com/ios/50/home--v1.png" alt="Home">
+            </a>
+            <a href="chat.html" class="nav-icon" title="Private Chat">
+                <img src="https://img.icons8.com/ios/50/speech-bubble--v1.png" alt="Chat">
+            </a>
+            <a href="groups.html" class="nav-icon" title="Groups">
+                <img src="https://img.icons8.com/ios/50/conference-call.png" alt="Groups">
+            </a>
+            <a href="forum.html" class="nav-icon active" title="Forum">
+                <img src="https://img.icons8.com/ios/50/megaphone.png" alt="Forum">
+            </a>
+            <a href="resources.html" class="nav-icon" title="Resources">
+                <img src="https://img.icons8.com/ios/50/book-browser.png" alt="Resources">
+            </a>
+        </nav>
+        <div class="side-footer-icons">
+            <button id="logoutBtn" class="nav-icon" title="Logout">
+                <img src="https://img.icons8.com/ios/50/exit.png" alt="Logout">
+            </button>
+        </div>
+    </header>
+
+    <main class="forum-page-wrapper">
+        <header class="forum-header">
+            <h1>Forum</h1>
+            <p class="slogan">Share your thoughts, ask for strength.</p>
+        </header>
+
+        <div class="forum-layout initial-view" id="forumLayout">
+            <aside class="forum-sidebar">
+                <section class="create-post-card">
+                    <h3>Create a Post</h3>
+                    <input type="text" id="titleInput" placeholder="Post Title">
+                    <select id="categoryInput">
+                        <option value="">Select Category</option>
+                        <option value="Mental Health">Mental Health</option>
+                        <option value="School Pressure">School Pressure</option>
+                        <option value="Relationships">Relationships</option>
+                        <option value="Rights">Rights</option>
+                        <option value="Harassment & Safety">Harassment & Safety</option>
+                        <option value="Self Confidence">Self Confidence</option>
+                        <option value="Career Guidance">Career Guidance</option>
+                    </select>
+                    <textarea id="contentInput" rows="4" placeholder="Share your thoughts..."></textarea>
+                    <button id="postBtn">PostBn</button>
+                </section>
+
+                <button onclick="goBack()" class="back-home-btn">
+                    <span>⬅</span> Back to Home
+                </button>
+            </aside>
+
+            <section class="posts-display-area" id="postsArea" style="display: none;">
+                <div id="postsContainer">
+                    </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>© 2026 AuraAlly | <a href="#">Privacy</a> | <a href="#">Helpline: 181</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function goBack() { window.location.href = "home.html"; }
+
+        function toggleCommentSection(btn) {
+           
+            const commentArea = btn.closest('.post-card').querySelector('.comment-input-area');
+            if (commentArea.style.display === "none" || commentArea.style.display === "") {
+                commentArea.style.display = "block";
+            } else {
+                commentArea.style.display = "none";
+            }
+        }
+    </script>
+    <script type="module" src="js/forum.js"></script>
+</body>
+</html> 

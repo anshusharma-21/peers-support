@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+body {
+    background: #fcfaf7;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.side-header {
+    width: 85px;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-right: 1px solid #f0ede4;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+
+.nav-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+    transition: 0.3s;
+    position: relative; 
+}
+
+.nav-icon img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%);
+    opacity: 0.4;
+}
+
+.nav-icon.active img, 
+.nav-icon:hover img {
+    filter: none;
+    opacity: 1;
+}
+
+
+.notification-dot {
+    position: absolute;
+    top: 5px;
+    right: 22px;
+    width: 10px;
+    height: 10px;
+    background-color: #ff4757;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: none; 
+}
+
+
+.simple-chat-container {
+    margin-left: 85px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.chat-user-header {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 700px;
+    box-sizing: border-box;
+}
+
+.chat-user-header h3 {
+    font-size: 1rem;
+    margin: 0;
+    color: #8a817c;
+}
+
+.horizontal-users {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+}
+
+.user-item {
+    padding: 8px 18px;
+    background: #fcfaf7;
+    border: 1px solid #f0ede4;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.user-item:hover, 
+.user-item.active {
+    background: #ffb07c;
+    color: white;
+    border-color: #ffb07c;
+}
+
+
+.simple-chat-window {
+    background: white;
+    border-radius: 25px;
+    height: 70vh;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.message-container {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #faf9f6;
+}
+
+
+.message-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.my-msg {
+    justify-content: flex-end;
+}
+
+.other-msg {
+    justify-content: flex-start;
+}
+
+.message-bubble {
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.sent {
+    background: #4a4d3a;
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.received {
+    background: white;
+    border: 1px solid #f0ede4;
+    border-bottom-left-radius: 4px;
+}
+
+
+.simple-input-area {
+    padding: 20px;
+    border-top: 1px solid #f0ede4;
+    display: flex;
+    gap: 15px;
+    background: white;
+}
+
+.simple-input-area input {
+    flex: 1;
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: 1px solid #f0ede4;
+    outline: none;
+    background: #fcfaf7;
+    font-family: inherit;
+}
+
+#sendBtn {
+    background: #ffb07c;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#sendBtn:hover {
+    background: #f5a065;
+}
+
+.site-footer {
+    background: #2d3436;
+    color: #fdf2e9;
+    padding: 35px 0;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-inner p {
+    font-size: 1rem;
+    margin: 0;
+    opacity: 0.7;
+}
+
+.footer-inner a {
+    color: #ffb07c;
+    text-decoration: none;
+    margin: 0 10px;
+}
